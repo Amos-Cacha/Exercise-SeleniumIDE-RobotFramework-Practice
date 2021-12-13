@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.8.8 on win32)" generated="20211213 22:08:36.186" rpa="false" schemaversion="2">
+<suite id="s1" name="Tests" source="D:\Users\amosc\Documents\Coding\STSWENG\EXERCISE\Exercise-SeleniumIDE-RobotFramework-Practice\tests">
+<suite id="s1-s1" name="Valid Login" source="D:\Users\amosc\Documents\Coding\STSWENG\EXERCISE\Exercise-SeleniumIDE-RobotFramework-Practice\tests\valid_login.robot">
+<test id="s1-s1-t1" name="Valid Login">
+<kw name="Open Browser To Login Page" library="resources">
+<kw name="Open Browser">
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<msg timestamp="20211213 22:08:36.243" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20211213 22:08:36.243" endtime="20211213 22:08:36.243"/>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" starttime="20211213 22:08:36.246" endtime="20211213 22:08:36.246"/>
+</kw>
+<kw name="Login Page Should Be Open" library="resources">
+<status status="NOT RUN" starttime="20211213 22:08:36.246" endtime="20211213 22:08:36.246"/>
+</kw>
+<status status="FAIL" starttime="20211213 22:08:36.241" endtime="20211213 22:08:36.247"/>
+</kw>
+<kw name="Input Username" library="resources">
+<arg>${VALID USER}</arg>
+<status status="NOT RUN" starttime="20211213 22:08:36.247" endtime="20211213 22:08:36.248"/>
+</kw>
+<kw name="Input Password" library="resources">
+<arg>${VALID PASSWORD}</arg>
+<status status="NOT RUN" starttime="20211213 22:08:36.248" endtime="20211213 22:08:36.248"/>
+</kw>
+<kw name="Click Button">
+<arg>login-button</arg>
+<status status="NOT RUN" starttime="20211213 22:08:36.251" endtime="20211213 22:08:36.251"/>
+</kw>
+<kw name="Product Page Should Be Open" library="resources">
+<status status="NOT RUN" starttime="20211213 22:08:36.252" endtime="20211213 22:08:36.252"/>
+</kw>
+<kw name="Close Browser" type="TEARDOWN">
+<msg timestamp="20211213 22:08:36.254" level="FAIL">No keyword with name 'Close Browser' found.</msg>
+<status status="FAIL" starttime="20211213 22:08:36.254" endtime="20211213 22:08:36.254">No keyword with name 'Close Browser' found.</status>
+</kw>
+<status status="FAIL" starttime="20211213 22:08:36.240" endtime="20211213 22:08:36.254">No keyword with name 'Open Browser' found.
+
+Also teardown failed:
+No keyword with name 'Close Browser' found.</status>
+</test>
+<test id="s1-s1-t2" name="Locked Out Login">
+<kw name="Open Browser To Login Page" library="resources">
+<kw name="Open Browser">
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<msg timestamp="20211213 22:08:36.263" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20211213 22:08:36.262" endtime="20211213 22:08:36.263"/>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" starttime="20211213 22:08:36.265" endtime="20211213 22:08:36.265"/>
+</kw>
+<kw name="Login Page Should Be Open" library="resources">
+<status status="NOT RUN" starttime="20211213 22:08:36.265" endtime="20211213 22:08:36.265"/>
+</kw>
+<status status="FAIL" starttime="20211213 22:08:36.259" endtime="20211213 22:08:36.266"/>
+</kw>
+<kw name="Input Username" library="resources">
+<arg>${LOCKED OUT USER}</arg>
+<status status="NOT RUN" starttime="20211213 22:08:36.267" endtime="20211213 22:08:36.267"/>
+</kw>
+<kw name="Input Password" library="resources">
+<arg>${VALID PASSWORD}</arg>
+<status status="NOT RUN" starttime="20211213 22:08:36.267" endtime="20211213 22:08:36.267"/>
+</kw>
+<kw name="Click Button">
+<arg>login-button</arg>
+<status status="NOT RUN" starttime="20211213 22:08:36.269" endtime="20211213 22:08:36.269"/>
+</kw>
+<kw name="Element Text Should Be">
+<arg>css:[data-test=error]</arg>
+<arg>Epic sadface: Sorry, this user has been locked out.</arg>
+<status status="NOT RUN" starttime="20211213 22:08:36.271" endtime="20211213 22:08:36.271"/>
+</kw>
+<kw name="Close Browser" type="TEARDOWN">
+<msg timestamp="20211213 22:08:36.274" level="FAIL">No keyword with name 'Close Browser' found.</msg>
+<status status="FAIL" starttime="20211213 22:08:36.274" endtime="20211213 22:08:36.274">No keyword with name 'Close Browser' found.</status>
+</kw>
+<status status="FAIL" starttime="20211213 22:08:36.258" endtime="20211213 22:08:36.275">No keyword with name 'Open Browser' found.
+
+Also teardown failed:
+No keyword with name 'Close Browser' found.</status>
+</test>
+<doc>A test suite with a singles valid login
+
+This test follows the example using keywords from
+the Selenium library</doc>
+<status status="FAIL" starttime="20211213 22:08:36.231" endtime="20211213 22:08:36.280"/>
+</suite>
+<status status="FAIL" starttime="20211213 22:08:36.189" endtime="20211213 22:08:36.284"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="2" skip="0" id="s1-s1" name="Valid Login">Tests.Valid Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
