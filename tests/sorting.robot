@@ -24,7 +24,7 @@ Sort Price Descending
     First Price Shown   ${HIGHEST PRICE}
     Last Price Shown    ${LOWEST PRICE}
 
-Sort Alphabetically Ascending
+Sort Price Ascending
     Select From List By Label   css:*[data-test="product_sort_container"]   ${SORT PRICE ASC}
     First Price Shown   ${LOWEST PRICE}
     Last Price Shown    ${HIGHEST PRICE}
