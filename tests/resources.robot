@@ -19,7 +19,7 @@ ${TEST ALL TSHIRT}    Test.allTheThings() T-Shirt (Red)
 ${HIGHEST PRICE}      $49.99
 ${LOWEST PRICE}       $7.99
 ${SORT ALPHB DESC}    Name (A to Z)
-${SORT ALPHB ASC}     Name (A to A)
+${SORT ALPHB ASC}     Name (Z to A)
 ${SORT PRICE DESC}    Price (high to low)
 ${SORT PRICE ASC}     Price (low to high)
 
