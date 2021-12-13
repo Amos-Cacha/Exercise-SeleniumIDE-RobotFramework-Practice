@@ -16,7 +16,12 @@ ${WRONG PW ERROR}     Epic sadface: Username and password do not match any user 
 ${ERROR IMAGE}        https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg
 ${BACKPACK}           Sauce Labs Backpack
 ${TEST ALL TSHIRT}    Test.allTheThings() T-Shirt (Red)
+${HIGHEST PRICE}      $49.99
+${LOWEST PRICE}       $7.99
 ${SORT ALPHB DESC}    Name (A to Z)
+${SORT ALPHB ASC}     Name (A to A)
+${SORT PRICE DESC}    Price (high to low)
+${SORT PRICE ASC}     Price (low to high)
 
 *** Keywords ***
 Open Browser To Login Page
@@ -52,10 +57,18 @@ Login Correctly
     Submit Credentials
     Product Page Should Be Open
 
-First Value Shown
+First Item Shown
     [Arguments]     ${text}
     Element Text Should Be  css:.inventory_list .inventory_item:first-child .inventory_item_name  ${text}
 
-Last Value Shown
+Last Item Shown
     [Arguments]     ${text}
     Element Text Should Be  css:.inventory_list .inventory_item:last-child .inventory_item_name  ${text}
+
+First Price Shown
+    [Arguments]     ${text}
+    Element Text Should Be  css:.inventory_list .inventory_item:first-child .inventory_item_price  ${text}
+
+Last Price Shown
+    [Arguments]     ${text}
+    Element Text Should Be  css:.inventory_list .inventory_item:last-child .inventory_item_price  ${text}

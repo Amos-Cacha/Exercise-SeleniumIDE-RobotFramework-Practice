@@ -11,5 +11,20 @@ Test Teardown   Close Browser
 
 Sort Alphabetically Descending
     Select From List By Label   css:*[data-test="product_sort_container"]   ${SORT ALPHB DESC}
-    First Value Shown   ${BACKPACK}
-    Last Value Shown    ${TEST ALL TSHIRT}
+    First Item Shown   ${BACKPACK}
+    Last Item Shown    ${TEST ALL TSHIRT}
+
+Sort Alphabetically Ascending
+    Select From List By Label   css:*[data-test="product_sort_container"]   ${SORT ALPHB ASC}
+    First Item Shown   ${TEST ALL TSHIRT}
+    Last Item Shown    ${BACKPACK}
+
+Sort Price Descending
+    Select From List By Label   css:*[data-test="product_sort_container"]   ${SORT PRICE DESC}
+    First Price Shown   ${HIGHEST PRICE}
+    Last Value Shown    ${LOWEST PRICE}
+
+Sort Alphabetically Ascending
+    Select From List By Label   css:*[data-test="product_sort_container"]   ${SORT PRICE DESC}
+    First Price Shown   ${LOWEST PRICE}
+    Last Value Shown    ${HIGHEST PRICE}
